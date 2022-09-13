@@ -1,0 +1,42 @@
+
+ div{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 390px;
+    width: 390px;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(238, 244, 184)
+    }
+
+    img{
+        height:250px;
+        width: 250px;
+    }
+
+    img:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    span{
+        text-decoration: line-through;
+        color: red;
+    }
+
+    p1{
+        text-decoration: underline;
+        color: blue;
+        font-size: 22px;
+    }
+
+    p{
+        text-decoration: underline;
+        color: green;
+    }
+
+    p3{
+        color: rgb(216, 114, 216);
+    }
