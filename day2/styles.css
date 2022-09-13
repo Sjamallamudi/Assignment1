@@ -8,7 +8,8 @@
     padding: 5px;
     margin: 5px;
     text-align: center;
-    background-color: rgb(238, 244, 184)
+    background-color: rgb(238, 244, 184);
+    border-top: 20px solid rgb(163, 161, 161);
     }
 
     img{
