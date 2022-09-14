@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: bisque;
+            }
+        </style>
+    </head>
+<body>
+
+<h2>Getting Coordinates using JavaScript</h2>
+<hr/>
+
+<p>Click on the icons to go to a web page and read more about the topic:</p>
+
+<img   onmousemove="getCoords(event)"
+			src="Imgs/mainimg.png" 
+			alt="mainimg" 
+			usemap="#imgmap" 
+			width="550" height="400"  />
+			
+<h1 id="x"></h1>
+
+ 
+ <script>
+	function   getCoords(e)
+	{
+		var obj = document.getElementById("x");
+		obj.innerText  = "X = " + e.clientX + ",  Y = " + e.clientY;
+	}	
+ </script>
+
+</body>
+</html>
