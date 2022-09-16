@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js implementation</title>
+</head>
+<body>
+    <label>User name: </label>
+    <input type="text" id="t1" name="t1" /><br/><br/>
+
+    <label>Favourite color: </label>
+    <select name="color" id="color">
+        <option value="red">red</option>
+        <option>pink</option>
+        <option>blue</option>
+        <option>yellow</option>
+        <option>green</option>
+    </select>
+    
+
+    <input type="button" id="b1" name="b1" value="Submit" onclick="fn_updateData()" /><br/><br/>
+     <p id="p1"></p>
+     <a href="Demo2.html">Next Page</a>
+    <script>
+        function  fn_updateData(){
+            var obj = document.getElementById("color");
+			localStorage.setItem("apply",  obj.value);
+			alert("User details stored in webstorage.");
+
+        function f2(){	
+			var str  =  localStorage.getItem("uid");
+			alert("User Id  : " + str);
+		}
+		
+		}	
+    </script>
+
+</body>
+</html>

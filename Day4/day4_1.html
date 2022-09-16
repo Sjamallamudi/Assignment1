@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DEMO</title>
+</head>
+<body>
+    <label>Product name</label>
+    <input type="text" id="t1" name="t1" /><br/><br/>
+
+    <label>Unit Price</label>
+    <input type="text" id="t2" name="t2" /><br/><br/>
+
+    <label>Quantity</label>
+    <input type="text" id="t3" name="t3" /><br/><br/>
+
+    <input type="button" id="b1" name="b1" value="Get Total" onclick="fn_updateData()" /><br/><br/>
+     <p id="p1"></p>
+    <script>
+        function  fn_updateData(){
+            var obj1= document.getElementById("t2")
+            var obj2= document.getElementById("t3")
+            var obj3= obj1.value*obj2.value;
+            var  paraObj  = document.getElementById("p1");
+		    paraObj.innerText  = "Total amount :  "  + obj3;
+
+            //to add two variables : 
+            //var obj1= document.getElementById("t2")
+            //var obj2= document.getElementById("t3")
+            //var obj3= parseInt(obj1.value)*parseInt(obj2.value);
+
+        }
+    </script>
+</body>
+</html>
