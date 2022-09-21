@@ -1,0 +1,55 @@
+h1{
+    color: blue;
+    text-shadow: 5px 5px 5px orange;
+    text-align: center;
+    font-size: 60px;
+}
+
+p{
+    word-spacing: 20px;
+    border: 3px solid grey;
+    padding: 10px;
+}
+
+p::first-letter{
+    color: blue;
+    font-size: 40px;
+    font-style: bold italic;
+}
+
+h3{
+    letter-spacing: 15px;
+    border: 3px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+
+div{
+    width: 620px;
+    height: 375px;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 7px;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+}
+
+img{
+    width: 300px;
+    height: 180px;
+    border: 2px solid black;
+}
+
+#img1{
+    border-bottom-right-radius: 40px;
+}
+#img2{
+    border-bottom-left-radius: 40px;
+}
+#img3{
+    border-top-right-radius: 40px;
+}
+#img4{
+    border-top-left-radius: 40px;
+}
