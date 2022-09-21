@@ -14,7 +14,7 @@
             padding-left: 40px;
             margin-left: 350px;
             margin-top: 15px;
-            width: 450px;
+            width: 500px;
 
         }
         span{
@@ -26,12 +26,13 @@
     <h2>Bank Account closing form</h2>
 
     <form id="form1" action="Register.php" autocomplete="off" metdod="GET">
+        <br/>
         <label><b>Account Holder : <span>*</span></b></label><br/>
         <input type="text"  placeholder="First Name" autofocus required id="t1" name="t1" />
         <input type="text"  placeholder="Last Name" required id="t2" name="t2" /><br/><br/>
 
         <label><b>Account Number : <span>*</span></b></label><br/>
-        <input type="number"   pattern="\d{11}" required id="n1" name="n1" /><br/><br/>
+        <input type="text" pattern="\d{11}" required id="n1" name="n1" /><br/><br/>
 
         <label><b>Phone Number : <span>*</span></b></label><br/>
         <input type="number"  placeholder="country code" pattern="\d{2}" required id="n2" name="n2" />
@@ -70,7 +71,7 @@
             </tr>
         </table>
         <br/><br/>
-        <input type="checkbox" id="ck1" name="ck1" required>I agree to tde terms and conditions <br/>
+        <input type="checkbox" id="ck1" name="ck1" required>I agree to tde terms and conditions <br/><br/>
 
         <input type="submit" value="submit"/>
     </form>
