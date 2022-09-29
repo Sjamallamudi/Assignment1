@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day10_1</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Customer Details</legend>
+        
+        Customer Name  :  <input type="text" id="cname"  name="cname"  />
+        <br/><br/>
+        
+        Joined Date  :  <input type="date" id="jdate"  name="jdate"  />
+        <br/><br/>
+        
+        Favourite Color  :  <input type="color" id="favcolor"  name="favcolor"  />
+        <br/><br/>
+        
+        <input type="button"  value="Submit"   onclick="fn_saveData()" />
+        <br/>
+        <a href="day10_2.html">Next Page</a>
+        
+
+    </fieldset>
+		
+    <script>
+        function fn_saveData(){
+            var txtCustName = document.getElementById("cname");
+            var dtCustDate = document.getElementById("jdate");
+            var clCustcolor = document.getElementById("favcolor");
+
+            var custObj = {};
+            custObj.name = txtCustName.value;
+            custObj.dt = dtCustDate.value;
+            custObj.fcolor = clCustcolor.value;
+
+            var str = JSON.stringify(custObj);
+            console.log(str);
+
+            localStorage.setItem("CustData", str);
+            alert("Thank you for submitting!!");
+        }
+
+    </script>
+</body>
+</html>

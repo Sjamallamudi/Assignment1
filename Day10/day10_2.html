@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day10_2</title>
+</head>
+<body onload="fn_changes()">
+    <h1 id="heading"></h1>
+    <p id="date"></p>
+   <script>
+    function fn_changes(){
+        var str = localStorage.getItem("CustData");
+        var custObj= JSON.parse(str);
+        console.log(custObj);
+
+        var cname= custObj.name;
+        var jdt = custObj.dt;
+        var fclr = custObj.fcolor;
+
+        var welc = document.getElementById("heading");
+        welc.innerText = "Welcome to Deloitte " + cname + "!!";
+
+        var paraobj = document.getElementById("date");
+        paraobj.innerText = "Thank you for being a part of deloitte from " + jdt + ". Hope you have a great time in Deloitte.";
+        
+        document.body.style.background = fclr;
+
+    }
+   </script>
+</body>
+</html>
