@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day9_1</title>
+</head>
+<body>
+    <input type="button" id="parsing" name="parsing" value="parsing" onclick="fn_JSONToObj()"/>
+    <input type="button" id="stringify" name="stringify" value="stringify" onclick="fn_ObjToJSON()"/>
+
+    <script>
+        //parsing
+        function fn_JSONToObj(){
+            var str = '{"empno":1,"empname":"Scott","job":"analyst","salary":20000, "deptno":2}';
+            console.log(str);			
+            var obj = JSON.parse(str);
+            console.log(obj);
+        }
+        
+        //stringify
+        function fn_ObjToJSON(){
+            var obj = {empno:1, empname:"Scott", job:"analyst", salary:20000, deptno:2};
+            console.log(obj);
+            var str = JSON.stringify(obj);
+            console.log(str);   
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day9_2</title>
+</head>
+<body>
+    <input type="button" id="parsing" name="parsing" value="parsing" onclick="fn_JSONToArray()"/>
+    <input type="button" id="stringify" name="stringify" value="stringify" onclick="fn_ArrayToJSON()"/>
+
+    <script>
+        function fn_JSONToArray(){
+            var str = '[{"empno":1, "empname":"Scott", "job":"analyst", "salary":20000, "deptno":2},{"empno":2, "empname":"Suzy", "job":"manager", "salary":50000, "deptno":1},{"empno":3, "empname":"Ethan", "job":"Consultant", "salary":70000, "deptno":2},{"empno":4, "empname":"Alisa", "job":"CFO", "salary":200000, "deptno":7},{"empno":5, "empname":"Janet", "job":"Senior Analyst", "salary":60000, "deptno":5}]';
+            console.log(str);	
+            var Emparray = JSON.parse(str);
+            console.log(Emparray);
+        }
+
+        function fn_ArrayToJSON(){
+            var Emparray = [{empno:1, empname:"Scott", job:"analyst", salary:20000, deptno:2},{empno:2,  empname:"Suzy", job:"manager", salary:50000, deptno:1},{empno:3, empname:"Ethan", job:"Consultant", salary:70000, deptno:2},{empno:4, empname:"Alisa", job:"CFO", salary:200000, deptno:7},{empno:5, empname:"Janet", job:"Senior Analyst", salary:60000, deptno:5}];
+            console.log(Emparray);			
+            var str = JSON.stringify(Emparray);
+            console.log(str);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day9_4</title>
+</head>
+<body>
+    <h1>Employee Details</h1><hr/><br/>
+    <input type="button" id="b1" name="b1" value="get details" onclick="fn_details()"/>
+    <p id="p1"></p>
+    <img id="img1">
+    <script>
+        function fn_details(){
+            var str  = '{"idno":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"}';
+
+            var obj = JSON.parse(str);
+            console.log(obj);
+            
+            var paraobj = document.getElementById("p1");
+            p1.innerText = "User Id : " + obj.idno + '\n' + "First Name : " + obj.first_name + '\n' + "Last Name : " + obj.last_name + '\n' + "Email Id : " + obj.email + '\n' + "Avatar : ";
+
+            var imgobj = document.getElementById("img1");
+            img1.src = obj.avatar;
+        }    
+    </script>
+</body>
+</html>
