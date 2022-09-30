@@ -1,0 +1,80 @@
+@import 'styles';
+
+img{
+    height: 300px;
+    width: 450Px;
+}
+
+#hlinks{
+    text-align: center;
+}
+
+a{
+    font-size: 30px;
+    margin: 20px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    box-shadow: 10px 10px 3px grey;
+
+    &:hover{
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 45px;
+        color: white;
+    }
+}
+
+
+
+#div1, #div2{
+    text-align: center;
+    
+}
+
+#img1{
+    height: 350px;
+    width: 450px;
+    border: 2px gray;
+}
+
+#img2{
+    border-radius: 50%;
+}
+
+.theme(@mode)when(@mode="square"){
+    background-color: aqua;
+    border: 5px;
+    box-shadow: 10px 15px 5px black;
+}
+.theme (@mode) when (@mode= "circle"){
+    border: 5px;
+    box-shadow: 10px 15px 5px rgb(236, 55, 55);
+}
+
+#img1{
+    .theme("square");
+}
+
+#img2{
+    .theme("circle");
+}
+
+#div2{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.fancybuttons{
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: 2px solid gray;
+    border-radius: 25px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
